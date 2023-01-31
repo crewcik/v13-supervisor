@@ -1,0 +1,42 @@
+{
+    "staff": "ROL ID",
+
+    "cmute-rol": "ROL ID",
+    "cmute-log": "LOG ID",
+    "cmute-staff": "ROL ID",
+
+    "jail-rol": "ROL ID",
+    "jail-log": "LOG ID",
+    "jail-staff": "ROL ID",
+
+    "vmute-rol": "ROL ID",
+    "vmute-log": "LOG ID",
+    "vmute-staff": "ROL ID",
+    
+    "kayıtsız-rol": "ROL ID",
+    "booster-rol": "ROL ID",
+    "vip-rol": "ROL ID",
+
+    "çekiliş-rol": "ROL ID",
+    "etkinlik-rol": "ROL ID",
+    
+    "ban-hammer": "ROL ID",
+    "tag": "•",
+    "tag-rol": "ROL ID",
+    
+    "kayıt-kanal": "KANAL ID",
+    "chat-kanal": "",
+
+    "kayıtçı-rol": "",
+
+    "erkek-rol-1": "ROL ID",
+    "erkek-rol-2": "ROL ID",
+    "erkek-rol-3": "ROL ID",
+
+    "kadın-rol-1": "ROL ID",
+    "kadın-rol-2": "ROL ID",
+    "kadın-rol-3": "ROL ID",
+
+    "ses": "BOT SES KANAL ID",
+    "sunucuıd": "SUNUCUNUZUN ID'Sİ"
+}
