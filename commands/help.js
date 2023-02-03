@@ -24,7 +24,7 @@ module.exports = {
         **${p}k @crew/ID <İSİM> <YAŞ>**
         `)
         .setColor('RANDOM')
-        .setFooter({ text: 'Crew v14 alt yapı'})
+        .setFooter({ text: 'Crew v13 alt yapı'})
         .setThumbnail(message.author.avatarURL({ dynamic : true }))
         message.channel.send({ embeds : [crew] })
     }
