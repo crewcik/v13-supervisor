@@ -12,7 +12,7 @@ module.exports = {
         const embed = new MessageEmbed()
         .setDescription(`İsminde **${tag}** olan kişilere <@&${rol}> isimli rol verilecek.`)
         .setColor('RANDOM')
-        .setFooter({ text: 'Crew v14 alt yapı' })
+        .setFooter({ text: 'Crew v13 alt yapı' })
         message.reply({ embeds : [embed] })
     }
 }
