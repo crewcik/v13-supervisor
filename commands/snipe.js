@@ -8,6 +8,7 @@ module.exports = {
     async run (client, message, args) {
         if (!message.member.permissions.has('ADMINISTRATOR') && !message.member.roles.cache.has(panel.staff)) return message.reply(`Bu komutu için staff rolünde olmalısınız. ${x.x}`)
         let data = db.fetch(`snipe.${message.guild.id}`)
+        if (!data) return message.reply(`Bu kanalda hiç mesaj silinmemiş.`)
         const embed = new MessageEmbed()
         .setDescription(`
         • Mesaj sahibi : <@${data.mesajyazan}>
@@ -18,7 +19,7 @@ module.exports = {
         `)
         .setColor('000a37')
         .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${x.crew}`})
-        .setFooter({ text: 'Crew v14 alt yapı '})
+        .setFooter({ text: 'Crew v13 alt yapı'})
         message.reply({ embeds : [embed] }).then(crew => { setTimeout(() => { crew.delete() }, 10000)})
         await message.react('✅')
         db.delete(`snipe.${message.guild.id}`)
