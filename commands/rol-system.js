@@ -12,7 +12,7 @@ module.exports = {
             Bir kullanıcıya rol vermek için **${x.prefix}rol ver/al @rol/ID @kullanıcı/ID** 
             `)
             .setColor('RANDOM')
-            .setFooter({ text: 'Crew v14 alt yapı'})
+            .setFooter({ text: 'Crew v13 alt yapı'})
             .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${x.crew}`})
             message.reply({ embeds : [embed] })
         }
@@ -25,7 +25,7 @@ module.exports = {
             .setDescription(`${kullanıcı} başarıyla ${rol} isimli rol verildi.`)
             .setColor('RANDOM')
             .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${x.crew}`})
-            .setFooter({ text: 'Crew v14 alt yapı'})
+            .setFooter({ text: 'Crew v13 alt yapı'})
             message.reply({ embeds : [embed] })
             kullanıcı.roles.add(rol)
         }
@@ -38,7 +38,7 @@ module.exports = {
             .setDescription(`${kullanıcı} başarıyla ${rol} isimli rol kullanıcıdan alındı.`)
             .setColor('RANDOM')
             .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${x.crew}`})
-            .setFooter({ text: 'Crew v14 alt yapı'})
+            .setFooter({ text: 'Crew v13 alt yapı'})
             message.reply({ embeds : [embed] })
             kullanıcı.roles.remove(rol)
         }
