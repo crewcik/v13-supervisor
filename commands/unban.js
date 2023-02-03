@@ -14,7 +14,7 @@ module.exports = {
         const embed = new MessageEmbed()
         .setDescription(`Başarıyla <@!${id}> isimli kullanıcının sunucudaki yasağı kaldırıldı.`)
         .setColor('RANDOM')
-        .setFooter({ text: 'Crew v14 alt yapı' })
+        .setFooter({ text: 'Crew v13 alt yapı' })
         message.reply({ embeds : [embed] })
         message.guild.members.unban(id)
     }
