@@ -20,7 +20,7 @@ module.exports = {
             Bu şartları yerine getirerek sizde bir kullanıcıyı ses kanalında susturabilirsiniz.
             `)
             .setColor('RANDOM')
-            .setFooter({ text: 'Crew v14 alt yapı' })
+            .setFooter({ text: 'Crew v13 alt yapı' })
             message.reply({ embeds : [embed] })
         }
         let kullanıcı = message.mentions.members.first() || message.guild.members.cache.get(args[0])
@@ -38,7 +38,7 @@ module.exports = {
         .setDescription(`${kullanıcı} Başarıyla \`${sebep}\` nedeniyle **${süre}** kadar susturuldu. Artık ses kanallarına yazamaz.`)
         .setColor('RANDOM')
         .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${x.crew}`})
-        .setFooter({ text: 'Crew v14 alt yapı' })
+        .setFooter({ text: 'Crew v13 alt yapı' })
         message.reply({ embeds : [embed] }).then(() => {
             setTimeout(() => {
                 kullanıcı.roles.remove(panel['vmute-rol']) 
@@ -52,7 +52,7 @@ module.exports = {
                 \`•\` Tarih : <t:${Math.floor(message.createdTimestamp / 1000)}> (<t:${Math.floor(message.createdTimestamp / 1000)}:R>)
                 `)
                 .setColor('RANDOM')
-                .setFooter({ text: 'Crew v14 alt yapı' })
+                .setFooter({ text: 'Crew v13 alt yapı' })
                 client.channels.cache.get(panel['vmute-log']).send({ embeds : [logs] })
             }, süre)
         })
@@ -67,7 +67,7 @@ module.exports = {
         \`•\` Tarih : <t:${Math.floor(message.createdTimestamp / 1000)}> (<t:${Math.floor(message.createdTimestamp / 1000)}:R>)
         `)
         .setColor('RANDOM')
-        .setFooter({ text: 'Crew v14 alt yapı' })
+        .setFooter({ text: 'Crew v13 alt yapı' })
         client.channels.cache.get(panel['vmute-log']).send({ embeds : [logs] })
     }
 }
