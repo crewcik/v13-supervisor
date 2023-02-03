@@ -15,7 +15,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
         .setDescription(`${kullanıcı} başarıyla **${sebep}** nedeniyle ${message.author} tarafından sunucudan atıldı.`)
         .setColor('RANDOM')
-        .setFooter({ text: 'Crew v14 alt yapı'})
+        .setFooter({ text: 'Crew v13 alt yapı'})
         .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${x.crew}`})
         message.reply({ embeds : [embed] })
         kullanıcı.kick({ reason: sebep })
