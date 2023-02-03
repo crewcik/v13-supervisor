@@ -14,7 +14,7 @@ module.exports = {
         .setAuthor({ name: message.author.tag, iconURL: message.author.avatarURL({ dynamic : true }), url: `https://discord.com/users/${cw.crew}`})
         .setDescription(`**${tag}** Şuanda (**${usersayı}**) kişi'nin isminde bulunuyor.`)
         .setColor('RANDOM')
-        .setFooter({ text: 'Crew v14 alt yapı'})
+        .setFooter({ text: 'Crew v13 alt yapı'})
         message.reply({ embeds : [embed] })
     }
 }
